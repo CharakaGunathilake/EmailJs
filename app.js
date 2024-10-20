@@ -3,7 +3,7 @@ function sendEmail() {
     const emailAddress = document.getElementById("emailInput").value;
     const otpDiv = document.getElementsByClassName("otpDiv")[0];
     let otp = Math.floor(Math.random()*10000);
-    let emailBody = `Your OTP is:${otp}`;
+    let emailBody = `${otp}`;
     let params = {
         name: document.getElementById("nameInput").value,
         email: emailAddress,
